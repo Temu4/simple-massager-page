@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sidebar content*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 7%;
+  height: 100%;
+  min-width: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  background-color: rgb(1, 19, 78);
+}
+
+.sidebar__logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link:hover > * {
+  opacity: 0.9;
+}
+
+.sidebar__item {
+  margin-top: 25px;
+}
+.item__logo {
+  width: 22px;
+  height: 22px;
+  padding: 15px 24px 15px 24px;
+  border-left: 5px solid rgba(10, 214, 156, 0);
+  opacity: 0.5;
+}
+
+:hover > .item__logo,
+:focus > .item__logo,
+:active > .item__logo {
+  opacity: 1;
+  border-left: 5px solid rgba(10, 214, 156, 1);
+}
+
+.item__label {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 42px;
+  background-color: rgb(42, 116, 219);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  height: 100%;
+}
+
+.main__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: white;
+  border-bottom: 1px solid rgb(218, 228, 242);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background-color: rgb(249, 250, 252);
+}
+
+.contacts {
+  width: 20%;
+  height: 80%;
+  border-right: 1px solid rgb(237, 240, 244);
+  box-shadow: 0 0 10px rgb(241, 243, 245);
+}
+
+.mailbox {
+  width: 60%;
+  height: 80%;
+  box-shadow: 0 0 15px rgb(241, 243, 245);
+}
+
+.mailbox__search-box {
+  height: 10%;
+  background-color: white;
+  border-bottom: 1px solid rgb(237, 240, 244);
+}
+
+.mailbox__massage-list {
+  height: 75%;
+  background-color: white;
+}
+
+.mailbox__type-area {
+  height: 15%;
+  background-color: white;
+  border-top: 1px solid rgb(237, 240, 244);
+}
