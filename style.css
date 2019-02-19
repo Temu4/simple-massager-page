@@ -46,6 +46,7 @@ body {
 
 .sidebar__item {
   margin-top: 25px;
+  width: 100%;
 }
 .item__logo {
   width: 22px;
@@ -59,7 +60,7 @@ body {
 :focus > .item__logo,
 :active > .item__logo {
   opacity: 1;
-  border-left: 5px solid rgba(10, 214, 156, 1);
+  border-left: 5px solid rgb(10, 214, 156);
 }
 
 .item__label {
@@ -76,6 +77,7 @@ body {
   border-radius: 50%;
 }
 
+/* Main header */
 .main {
   display: flex;
   flex-direction: column;
@@ -83,49 +85,262 @@ body {
   height: 100%;
 }
 
-.main__header {
+.header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   height: 10%;
   background-color: white;
   border-bottom: 1px solid rgb(218, 228, 242);
 }
 
+.routing__item {
+  display: inline-block;
+  margin: 10px;
+}
+
+.routing__mark {
+  width: 5px;
+  height: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:focus,
+.link:active {
+  color: rgb(10, 214, 156);
+}
+
+.header__account {
+  margin: 10px 40px 0 0;
+}
+
+.account__avatar {
+  vertical-align: middle;
+  display: inline;
+  margin: 10px;
+}
+.account__name {
+  vertical-align: middle;
+  display: inline;
+}
+
+.mark {
+  width: 9px;
+  height: 5px;
+}
+
+.account__mark {
+  margin-left: 10px;
+}
+
+/* Main content */
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90%;
   background-color: rgb(249, 250, 252);
+  border-radius: 5px;
 }
 
+/* Contacts content */
 .contacts {
+  display: flex;
+  flex-direction: column;
   width: 20%;
   height: 80%;
+  min-width: 200px;
   border-right: 1px solid rgb(237, 240, 244);
-  box-shadow: 0 0 10px rgb(241, 243, 245);
+  box-shadow: 0 0 5px rgb(241, 243, 245);
 }
 
+.user {
+  display: block;
+  text-decoration: none;
+  background-color: rgb(249, 250, 252);
+}
+
+.user:hover {
+  background-color: white;
+}
+
+.user:active,
+.user:focus {
+  background-color: white;
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px rgb(203, 205, 207);
+}
+.user__avatar {
+  float: left;
+  margin: 12px 8px 10px 8px;
+}
+
+.user__activity {
+  float: right;
+  margin: 5px 10px 5px 5px;
+}
+
+.time {
+  color: grey;
+  font-size: 0.8em;
+}
+
+.user__info {
+  display: block;
+  margin-top: 20px;
+}
+
+.user__name {
+  display: -webkit-inline-box;
+  color: rgb(1, 19, 78);
+  font-weight: bold;
+}
+
+.user__status--on {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(10, 214, 156);
+  margin-left: 5px;
+}
+
+.user__message {
+  color: grey;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+/* Mailbox content */
 .mailbox {
   width: 60%;
   height: 80%;
   box-shadow: 0 0 15px rgb(241, 243, 245);
 }
 
-.mailbox__search-box {
+/* Search box content */
+.search-box {
+  display: flex;
   height: 10%;
+  margin-bottom: 2px;
   background-color: white;
   border-bottom: 1px solid rgb(237, 240, 244);
 }
 
-.mailbox__massage-list {
+.search-box__icon {
+  position: absolute;
+  margin: 15px 10px 0 10px;
+}
+
+.input-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.input-icon:hover {
+  opacity: 0.8;
+}
+
+.input-field {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  border: none;
+}
+
+.input-field::placeholder {
+  color: rgb(187, 195, 207);
+}
+
+/*****************/
+/*Focus atribute to input field */
+:focus > .input-field {
+  box-shadow: 0 0 3px 1px rgb(0, 140, 255);
+}
+
+/* Removing default outline only after we've added our custom one */
+.input-icon:focus,
+.input-icon:active,
+.search-box:focus,
+.type-area:focus,
+.input-field:focus {
+  outline: none;
+}
+/*****************/
+
+/* Mailbox content */
+.mailbox__message-box {
   height: 75%;
+  background-color: white;
+  overflow-y: auto;
+  border-bottom: 1px solid rgb(237, 240, 244);
+}
+
+/* Message */
+.message {
+  display: flex;
+  width: 55%;
+  padding: 50px 0 0 10px;
+}
+
+.message--right {
+  float: right;
+  display: flex;
+  width: 45%;
+  padding: 50px 30px 0 10px;
+}
+
+.message__avatar {
+  width: 50px;
+  height: 100%;
+  padding: 30px 5px 0 20px;
+}
+
+.message__body {
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(249, 250, 252);
+}
+
+.message__text {
+  float: left;
+}
+
+.message__time {
+  float: right;
+}
+
+/* Typing area */
+.mailbox__type-area {
+  display: flex;
+  height: 15%;
   background-color: white;
 }
 
-.mailbox__type-area {
-  height: 15%;
-  background-color: white;
-  border-top: 1px solid rgb(237, 240, 244);
+.type-area__icon {
+  float: right;
+
+  margin: 15px 10px 0 10px;
+}
+
+.input-icon--med {
+  width: 20px;
+  height: 20px;
+}
+
+.input-icon--btn {
+  box-shadow: 0 0 10px rgb(203, 205, 207);
+  padding: 5px;
+  border-radius: 5px;
 }

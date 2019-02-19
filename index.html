@@ -42,15 +42,192 @@
       </ul>
       <div class="main">
         <div class="main__header header">
-          <div class="header__ref"></div>
-          <div class="header__account"></div>
+          <ul class="header__routing">
+            <li class="routing__item"><a href="#" class="link">Home</a></li>
+            <img
+              src="img/angle-right-solid.png"
+              alt="angle-right"
+              class="routing__mark"
+            />
+            <li class="routing__item"><a href="#" class="link">Network</a></li>
+          </ul>
+          <a href="#" class="header__account account link">
+            <img
+              src="img/avatar7.png"
+              alt="Sarah Freeman"
+              class="account__avatar"
+            />
+            <h5 class="account__name">
+              Sarah Freeman
+            </h5>
+            <img
+              src="img/angle-down-solid.png"
+              alt="angle-down"
+              class="account__mark mark"
+            />
+          </a>
         </div>
         <div class="main__content content">
-          <div class="content__contacts contacts">Contacts</div>
+          <div class="content__contacts contacts">
+            <a href="#" class="contacts__user user">
+              <div class="user__avatar">
+                <img src="img/avatar1.png" alt="Miranda Hops" />
+              </div>
+              <div class="user__activity time">9:32</div>
+              <div class="user__info">
+                <div class="user__name">
+                  Miranda Hops
+                  <div class="user__status--on"></div>
+                </div>
+
+                <div class="user__message">Lorem ipsum dolor sit.</div>
+              </div>
+            </a>
+            <a href="#" class="contacts__user user">
+              <div class="user__avatar">
+                <img src="img/avatar2.png" alt="Barry Callebaut" />
+              </div>
+              <div class="user__activity time">22:01</div>
+              <div class="user__info">
+                <div class="user__name">
+                  Barry Callebaut
+                  <div class="user__status--off"></div>
+                </div>
+                <div class="user__message">Lorem ipsum dolor sit.</div>
+              </div>
+            </a>
+            <a href="#" class="contacts__user user">
+              <div class="user__avatar">
+                <img src="img/avatar3.png" alt="Stacey Dosh" />
+              </div>
+              <div class="user__activity time">19:15</div>
+              <div class="user__info">
+                <div class="user__name">
+                  Stacey Dosh
+                  <div class="user__status--on"></div>
+                </div>
+                <div class="user__message">Lorem ipsum dolor sit.</div>
+              </div>
+            </a>
+            <a href="#" class="contacts__user user">
+              <div class="user__avatar">
+                <img src="img/avatar4.png" alt="Michael Kors" />
+              </div>
+              <div class="user__activity time">13:49</div>
+              <div class="user__info">
+                <div class="user__name">
+                  Michael Kors
+                  <div class="user__status--off"></div>
+                </div>
+                <div class="user__message">Lorem ipsum dolor sit.</div>
+              </div>
+            </a>
+            <a href="#" class="contacts__user user">
+              <div class="user__avatar">
+                <img src="img/avatar5.png" alt="Johny Cash" />
+              </div>
+              <div class="user__activity time">10:25</div>
+              <div class="user__info">
+                <div class="user__name">
+                  Johny Cash
+                  <div class="user__status--on"></div>
+                </div>
+                <div class="user__message">Lorem ipsum dolor sit.</div>
+              </div>
+            </a>
+            <a href="#" class="contacts__user user">
+              <div class="user__avatar">
+                <img src="img/avatar6.png" alt="Stacey Dosh" />
+              </div>
+              <div class="user__activity time">08:53</div>
+              <div class="user__info">
+                <div class="user__name">
+                  Stacey Dosh
+                  <div class="user__status--off"></div>
+                </div>
+                <div class="user__message">Lorem ipsum dolor sit.</div>
+              </div>
+            </a>
+          </div>
           <div class="content__mailbox mailbox">
-            <div class="mailbox__search-box">Search</div>
-            <div class="mailbox__massage-list">Massage list</div>
-            <div class="mailbox__type-area">Type area</div>
+            <div class="mailbox__search-box search-box" tabindex="0">
+              <img
+                src="img/search-solid.png"
+                class="search-box__icon input-icon"
+              />
+              <input
+                type="text"
+                placeholder="Search message..."
+                class="search-box__input input-field"
+                tabindex="-1"
+              />
+            </div>
+            <div class="mailbox__message-box">
+              <div class="message">
+                <div class="message__avatar avatar">
+                  <img src="img/avatar3-mini.png" alt="Stacey Dosh" />
+                </div>
+                <div class="message__body">
+                  <div class="message__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Soluta, rerum?
+                  </div>
+                  <div class="message__time  time">01:14</div>
+                </div>
+              </div>
+              <div class="message--right">
+                <div class="message__body">
+                  <div class="message__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Soluta, rerum?
+                  </div>
+                  <div class="message__time  time">01:14</div>
+                </div>
+              </div>
+              <div class="message">
+                <div class="message__avatar avatar">
+                  <img src="img/avatar3-mini.png" alt="Stacey Dosh" />
+                </div>
+                <div class="message__body">
+                  <div class="message__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Soluta, rerum?
+                  </div>
+                  <div class="message__time  time">01:14</div>
+                </div>
+              </div>
+              <div class="message--right">
+                <div class="message__body">
+                  <div class="message__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Soluta, rerum?
+                  </div>
+                  <div class="message__time  time">01:14</div>
+                </div>
+              </div>
+            </div>
+            <div class="mailbox__type-area type-area" tabindex="0">
+              <input
+                type="text"
+                placeholder="Write a massage"
+                class="type-area__input input-field"
+                tabindex="-1"
+              />
+            <img
+              src="img/smile-solid.png"
+              class="type-area__icon input-icon input-icon--med"
+              tabindex="0"
+            />
+            <img
+              src="img/clip-solid.png"
+              class="type-area__icon input-icon input-icon--med"
+              tabindex="0"
+            />
+            <img
+              src="img/plain-solid.png"
+              class="type-area__icon input-icon input-icon--med input-icon--btn"
+              tabindex="0"
+            />
           </div>
         </div>
       </div>
